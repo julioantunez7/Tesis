@@ -1,10 +1,9 @@
-import streamlit as st
-import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 import plotly.express as px
-from sklearn.metrics import r2_score
+import streamlit as st
+from sklearn.linear_model import ElasticNet
 
 
 # Página 1
@@ -29,7 +28,7 @@ def pagina_1():
     train_df = train_df.drop(columnas_a_eliminar, axis=1)
     train_df.dropna(inplace=True)
     train_df.drop(train_df[train_df['forecast_3_month'] == 0].index, inplace=True)
-    from sklearn.linear_model import ElasticNet
+
 
     if archivo_cargado is not None:
         test_df = leer_csv(archivo_cargado)
