@@ -1,6 +1,7 @@
-matplotlib
-numpy
-pandas
-plotly
-streamlit
-scikit-learn
+matplotlib~=3.8.4
+numpy~=1.26.4
+pandas~=2.2.2
+plotly~=5.20.0
+streamlit~=1.33.0
+scikit-learn~=1.4.2
+requests~=2.31.0
