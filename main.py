@@ -6,14 +6,6 @@ import streamlit as st
 from scipy.stats import probplot
 from sklearn.linear_model import ElasticNet
 
-import os
-import streamlit as st
-
-# Set the port based on the Heroku environment variable
-port = int(os.environ.get("PORT", 8501))
-
-# Run Streamlit on the specified port
-streamlit.web.bootstrap.run('main.py', '', '', port)
 
 def pagina_1():
     # Función para leer el archivo CSV
