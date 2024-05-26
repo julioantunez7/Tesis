@@ -6,7 +6,11 @@ import streamlit as st
 from scipy.stats import probplot
 from sklearn.linear_model import ElasticNet
 
+import os
+import streamlit as st
 
+port = int(os.environ.get("PORT", 8501))
+st.server.server_port = port
 
 def pagina_1():
     # Función para leer el archivo CSV
